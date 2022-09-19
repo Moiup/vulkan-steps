@@ -20,7 +20,7 @@ The main source of information that helped build a first Vulkan application wher
  - [Vulkan Tutorial](https://vulkan-tutorial.com/)
  - [The Vulkan Specification](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/index.html), of course.
 
-Our goal is to draw a cube made during a rendering loop (like in video game), thus all the steps are build toward this goal.
+Our goal is to draw a cube made during a rendering loop (like in video games), thus all the steps are build toward this goal.
 
 ![3D Cube](Img/cube.png "3D Cube")
 
