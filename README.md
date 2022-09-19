@@ -17,11 +17,11 @@ If it is not already done, [click here to open the Vulkan specification](https:/
 
 The main source of information that helped build a first Vulkan application where:
  - [LunarG](https://vulkan.lunarg.com/doc/view/1.2.154.1/windows/tutorial/html/index.html)
- - []()
+ - [Vulkan Tutorial](https://vulkan-tutorial.com/)
  - The [specification](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/index.html), of course.
 
 ### **Disclaimer**
-This is not a tutorial to teach rendering, having a background in others graphic API such as OpenGL is almost mendatory.
+This is not a tutorial to teach rendering, having a background in others graphic API such as OpenGL is almost mendatory. I will not go in depth on why we do that or that. There are already good tutorial for this such as the [Vulkan Tutorial](https://vulkan-tutorial.com/).
 
 The code that I provide is not the cleanest, and this is done on purpose. Why? Because I did not wanted to build functions so that the reader can follow the tutorial linearly (copy / paste every step one after the other). Of course, the reader is encourage to build his own functions, classes and whatever he wants.
 
