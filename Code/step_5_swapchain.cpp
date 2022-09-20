@@ -439,6 +439,11 @@ int main()
 	/**************/
 	/* Destroying */
 	/**************/
+	// Swapchain
+	for (auto siv : swapchain_image_view_arr) {
+		vkDestroyImageView(logical_device, siv, nullptr);
+	}
+	vkDestroySwapchainKHR(logical_device, swapchain, nullptr);
 	// Command Buffers
 	vkFreeCommandBuffers(
 		logical_device,
