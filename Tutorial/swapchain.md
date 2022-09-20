@@ -60,4 +60,4 @@ File: [step_5_1_swapchain.cpp](../Code/step_5_1_swapchain.cpp)
 
 | Previous | Next |
 |---|---|
-| [Step 5: Swapchain and Image Views](swapchain_and_image_views.md) | [Step 5.2: Image Views (12.5.)](depth_buffer.md) |
+| [Step 5: Swapchain and Image Views](swapchain_and_image_views.md) | [Step 5.2: Image Views (12.5.)](image_views.md) |
