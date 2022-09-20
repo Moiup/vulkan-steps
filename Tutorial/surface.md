@@ -20,7 +20,7 @@ The function to call is [`glfwCreateWindowSurface`](https://www.glfw.org/docs/3.
 	}
 ```
 
-File: [](../Code/)
+File: [step_2_surface.cpp](../Code/step_2_surface.cpp)
 
 | Previous | Next |
 |---|---|

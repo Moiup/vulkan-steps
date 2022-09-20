@@ -43,8 +43,8 @@ We need first to enumerate the physical devices with [`vkEnumeratePhysicalDevice
 	std::cout << "\t" << discrete_gpu_properties.deviceName << std::endl;
 ```
 
-File: [step_2_1_physical_devices.cpp](../Code/step_2_1_physical_devices.cpp)
+File: [step_3_1_physical_devices.cpp](../Code/step_3_1_physical_devices.cpp)
 
 | Previous | Next |
 |---|---|
-| [Step 2: Devices and Queues](devices_and_queues.md) | [Step 2.2: Logical Devices and Queues](logical_devices_and_queues.md) |
+| [Step 3: Devices and Queues](devices_and_queues.md) | [Step 3.2: Logical Devices and Queues](logical_devices_and_queues.md) |
