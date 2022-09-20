@@ -59,4 +59,4 @@ int main()
 
 | Previous | Next |
 |---|---|
-| [Environment configuration](environment_configuration.md.md) | [Step 1: Instance (4.2.)](instance.md.md) |
+| [Environment configuration](environment_configuration.md) | [Step 1: Instance (4.2.)](instance.md) |
