@@ -165,4 +165,4 @@ File: [step_3_2_logical_devices_and_queues.cpp](../Code/step_3_2_logical_devices
 
 | Previous | Next |
 |---|---|
-| [Step 3.1: Physical Devices](physical_devices.md) | [Step 3.2: Logical Devices and Queues](logical_devices_and_queues.md) |
+| [Step 3.1: Physical Devices](physical_devices.md) | [Step 4: Command Buffers (6.)](command_buffers.md) |
