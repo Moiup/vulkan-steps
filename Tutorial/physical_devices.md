@@ -1,4 +1,4 @@
-# **Step 2.1: Physical Devices (5.1.)**
+# **Step 3.1: Physical Devices (5.1.)**
 ## **Hints**
 To find a physical device, we need to enumerate them with [`vkEnumeratePhysicalDevices`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap5.html#vkEnumeratePhysicalDevices).
 
