@@ -336,7 +336,10 @@ int main()
 	std::cout << "Command buffer created." << std::endl;
 
 	/**************************************************************/
-	/* Step 5: Swapchain (33.10)                                  */
+	/* Step 5: Swapchain and Image Views                          */
+	/**************************************************************/
+	/**************************************************************/
+	/* Step 5.1: Swapchain (33.10.)                               */
 	/**************************************************************/
 	int32_t width_in_pixels, height_in_pixels;
 	glfwGetFramebufferSize(window, &width_in_pixels, &height_in_pixels);
@@ -376,7 +379,11 @@ int main()
 	if (vk_result != VK_SUCCESS) {
 		throw std::runtime_error("Error: failed to create swapchain!");
 	}
+	std::cout << "Swapchain created." << std::endl;
 
+	/**************************************************************/
+	/* Step 5.2: Image Views                                      */
+	/**************************************************************/
 	uint32_t swapchain_image_count;
 	std::vector<VkImage> swapchain_image;
 	vk_result = vkGetSwapchainImagesKHR(
@@ -400,7 +407,6 @@ int main()
 	if (vk_result != VK_SUCCESS) {
 		throw std::runtime_error("Error: failed to retrieve the swapchain images!");
 	}
-	std::cout << "Swapchain created." << std::endl;
 
 	std::vector<VkImageView> swapchain_image_view_arr(swapchain_image_count);
 	for (size_t i = 0; i < swapchain_image_count; i++) {

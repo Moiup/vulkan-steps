@@ -1,10 +1,19 @@
-# **Step 5: Swapchain (33.10.)**
+# **Step 5.1: Swapchain (33.10.)**
 ## **Hints**
+To create the Swapchain, we need to call [`vkCreateSwapchainKHR`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap33.html#vkCreateSwapchainKHR).
 
 ## **The Code**
+We need to get the size in pixel of the framebuffer. To do so, we use [`glfwGetFramebufferSize`](https://www.glfw.org/docs/3.3/group__window.html#ga0e2637a4161afb283f5300c7f94785c9)
 
+Do not forget to destroy the Swapchain at the end with [`vkDestroySwapchainKHR`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap33.html#vkDestroySwapchainKHR)
 
 ```C++
+    /**************************************************************/
+	/* Step 5: Swapchain and Image Views                          */
+	/**************************************************************/
+	/**************************************************************/
+	/* Step 5.1: Swapchain (33.10.)                               */
+	/**************************************************************/
     int32_t width_in_pixels, height_in_pixels;
 	glfwGetFramebufferSize(window, &width_in_pixels, &height_in_pixels);
 
@@ -43,62 +52,12 @@
 	if (vk_result != VK_SUCCESS) {
 		throw std::runtime_error("Error: failed to create swapchain!");
 	}
-
-	uint32_t swapchain_image_count;
-	std::vector<VkImage> swapchain_image;
-	vk_result = vkGetSwapchainImagesKHR(
-		logical_device,
-		swapchain,
-		&swapchain_image_count,
-		nullptr
-	);
-	if (vk_result != VK_SUCCESS) {
-		throw std::runtime_error("Error: failed to access swapchain image count!");
-	}
-	std::cout << "image_count: " << swapchain_image_count << std::endl;
-
-	swapchain_image.resize(swapchain_image_count);
-	vk_result = vkGetSwapchainImagesKHR(
-		logical_device,
-		swapchain,
-		&swapchain_image_count,
-		swapchain_image.data()
-	);
-	if (vk_result != VK_SUCCESS) {
-		throw std::runtime_error("Error: failed to retrieve the swapchain images!");
-	}
 	std::cout << "Swapchain created." << std::endl;
-
-	std::vector<VkImageView> swapchain_image_view_arr(swapchain_image_count);
-	for (size_t i = 0; i < swapchain_image_count; i++) {
-		VkImageViewCreateInfo  swapchain_image_view_info{};
-		swapchain_image_view_info.sType = VK_STRUCTURE_TYPE_IMAGE_VIEW_CREATE_INFO;
-		swapchain_image_view_info.pNext = nullptr;
-		swapchain_image_view_info.flags = 0;
-		swapchain_image_view_info.image = swapchain_image[i];
-		swapchain_image_view_info.viewType = VK_IMAGE_VIEW_TYPE_2D;
-		swapchain_image_view_info.format = swapchain_info.imageFormat;
-		swapchain_image_view_info.components.r = VK_COMPONENT_SWIZZLE_R;
-		swapchain_image_view_info.components.g = VK_COMPONENT_SWIZZLE_G;
-		swapchain_image_view_info.components.b = VK_COMPONENT_SWIZZLE_B;
-		swapchain_image_view_info.components.a = VK_COMPONENT_SWIZZLE_A;
-		swapchain_image_view_info.subresourceRange.aspectMask = VK_IMAGE_ASPECT_COLOR_BIT;
-		swapchain_image_view_info.subresourceRange.baseMipLevel = 0;
-		swapchain_image_view_info.subresourceRange.levelCount = 1;
-		swapchain_image_view_info.subresourceRange.baseArrayLayer = 0;
-		swapchain_image_view_info.subresourceRange.layerCount = 1;
-
-		vk_result = vkCreateImageView(
-			logical_device,
-			&swapchain_image_view_info,
-			nullptr,
-			&swapchain_image_view_arr[i]
-		);
 	}
 ```
 
-File: [step_5_swapchain.cpp](../Code/step_5_swapchain.cpp)
+File: [step_5_1_swapchain.cpp](../Code/step_5_1_swapchain.cpp)
 
 | Previous | Next |
 |---|---|
-| [Step 4: Command Buffers (6.)](command_buffers.md) | [Step 6: Depth Buffer (12.3., 12.5. and 12.7.)](depth_buffer.md) |
+| [Step 5: Swapchain and Image Views](swapchain_and_image_views.md) | [Step 5.2: Image Views (12.5.)](depth_buffer.md) |
