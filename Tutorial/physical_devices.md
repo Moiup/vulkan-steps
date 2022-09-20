@@ -3,7 +3,7 @@
 To find a physical device, we need to enumerate them with [`vkEnumeratePhysicalDevices`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap5.html#vkEnumeratePhysicalDevices).
 
 ## **The Code**
-We need first to enumerate the physical devices with [`vkEnumeratePhysicalDevices`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap5.html#vkEnumeratePhysicalDevices). Then, from this list, find the one that match the criteria we want. For each physical device, we need to access their properties with [`vkGetPhysicalDeviceProperties`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap5.html#vkGetPhysicalDeviceProperties). In this case, we are just checking for the `deviceType` field to be a `VK_PHYSICAL_DEVICE_TYPE_DISCRETE_GPU`. If you have multiple GPU inside your computer, you might need other criteria to select the right one.
+We need first to enumerate the physical devices with [`vkEnumeratePhysicalDevices`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap5.html#vkEnumeratePhysicalDevices). Then, from this list, find the one that match the criteria we want. For each physical device, we need to access their properties with [`vkGetPhysicalDeviceProperties`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap5.html#vkGetPhysicalDeviceProperties). In this case, we are just checking for the `deviceType` field to be a [`VK_PHYSICAL_DEVICE_TYPE_DISCRETE_GPU`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap5.html#VkPhysicalDeviceType). If you have multiple GPU inside your computer, you might need other criteria to select the right one.
 
 ```C++
     /********************************************/
