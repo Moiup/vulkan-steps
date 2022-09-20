@@ -1,9 +1,11 @@
 # **Step 5.2:  (12.5.)**
 ## **Hints**
-
+To create an Image View : [`vkCreateImageView`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap12.html#vkCreateImageView).
 
 ## **The Code**
+You must first get number of image in the swapchain by using [`vkGetSwapchainImagesKHR`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap33.html#vkGetSwapchainImagesKHR). Then, you can create the [VkImageViews](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap12.html#VkImageView), and for each of the associated [`VkImageViewCreateInfo`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap12.html#VkImageViewCreateInfo) we need to associate the [`VkImage`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap12.html#resources-images) in the field `image`.
 
+Do not forget to destroy all the [`VkImage`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap12.html#resources-images) with [`vkDestroyImageView`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap12.html#vkDestroyImageView)
 
 ```C++
     /**************************************************************/
