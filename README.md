@@ -32,7 +32,7 @@ The code that I provide is not the cleanest, and this is done on purpose. Why? B
 ## **Table of contents**
 
  - [Environment configuration](Tutorial/environment_configuration.md)
- - [Step 0: context initialisation with GLFW](Tutorial/context_initialisation_with_GLFW.md)
+ - [Step 0: Window creation with GLFW](Tutorial/context_initialisation_with_GLFW.md)
  - [Step 1: Instance (4.2.)](Tutorial/instance.md)
  - [Step 2: Devices and Queues (5.)](Tutorial/devices_and_queues.md)
  - [Step 3: Command Buffers (6.)](Tutorial/command_buffers.md)
