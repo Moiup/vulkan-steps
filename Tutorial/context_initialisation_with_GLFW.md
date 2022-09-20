@@ -1,8 +1,8 @@
 # **Step 0: Window creation with GLFW**
-## ** Hints **
+## **Hints**
 First of all, we aim for the documentation: [GLFW Documentation](https://www.glfw.org/documentation.html). After a few clicks, we find what we need here: [GLFW Vulkan Guide](https://www.glfw.org/docs/latest/vulkan_guide.html)
 
-## ** The Code **
+## **The Code**
 Not all the includes are necessary for the context initialisation, but these are all the one needed throug this tutorial.
 
 The while loop which will be used for rendering is already written, otherwise the window will close automatically.
