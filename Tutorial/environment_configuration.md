@@ -5,7 +5,7 @@ The [Vulkan Tutorial](https://vulkan-tutorial.com/Development_environment) expla
  - [GLFW](https://www.glfw.org/)
  - [GLM](https://github.com/g-truc/glm)
 
-However, the code written in this tutorial is made for Windows, you might need to adapt some parts for the over operating systems.
+However, the code written in this tutorial is made for Windows, you might need to adapt some parts for the other operating systems.
 
 | Previous | Next |
 |---|---|
