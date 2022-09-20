@@ -8,9 +8,9 @@ We can enable layers. I made the choice to print all the available layers and al
 The function [`glfwGetRequiredInstanceExtensions`](https://www.glfw.org/docs/3.3/group__vulkan.html#ga99ad342d82f4a3421e2864978cb6d1d6) returns provides the extensions needed when using GLFW.
 
 ```C++
-    /********************/
-	/* Instances (4.2.) */
-	/********************/
+    /********************************************/
+	/* Step 1: Instances (4.2.)                 */
+	/********************************************/
 	VkResult vk_result = VK_SUCCESS;
 	VkInstance vk_instance{};
 	VkApplicationInfo vk_application_info{};

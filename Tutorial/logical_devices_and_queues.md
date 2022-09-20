@@ -1,4 +1,4 @@
-# **Step 2.1: Physical Devices (5.1.)**
+# **Step 2.2: Logical Devices and Queues (5.2. and 5.3.)**
 ## **Hints**
 
 ## **The Code**

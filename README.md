@@ -35,6 +35,8 @@ The code that I provide is not the cleanest, and this is done on purpose. Why? B
  - [Step 0: Window creation with GLFW](Tutorial/context_initialisation_with_GLFW.md)
  - [Step 1: Instance (4.2.)](Tutorial/instance.md)
  - [Step 2: Devices and Queues (5.)](Tutorial/devices_and_queues.md)
+    - [Step 2.1: Physical Devices (5.1.)](Tutorial/physical_devices.md)
+    - [Step 2.2: Logical Devices and Queues (5.2. and 5.3.)](Tutorial/logical_devices_and_queues.md)
  - [Step 3: Command Buffers (6.)](Tutorial/command_buffers.md)
  - [Step 4: Swapchain (33.10.)](Tutorial/swapchain.md)
  - [Step 5: Depth Buffer (12.3., 12.5. and 12.7.)](Tutorial/depth_buffer.md)

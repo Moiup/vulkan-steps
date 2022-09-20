@@ -13,7 +13,7 @@
 int main()
 {
 	/********************************************/
-	/* Step 0: Window creation with GLFW */
+	/* Step 0: Window creation with GLFW        */
 	/********************************************/
 	const uint64_t width{ 1280 };
 	const uint64_t height{ 720 };
@@ -36,9 +36,9 @@ int main()
 	}
 	std::cout << "GLFW window created successfully." << std::endl;
 
-	/********************/
-	/* Instances (4.2.) */
-	/********************/
+	/********************************************/
+	/* Step 1: Instances (4.2.)                 */
+	/********************************************/
 	VkResult vk_result = VK_SUCCESS;
 	VkInstance vk_instance{};
 	VkApplicationInfo vk_application_info{};

@@ -13,7 +13,7 @@
 int main()
 {
 	/********************************************/
-	/* Step 0: Window creation with GLFW */
+	/* Step 0: Window creation with GLFW        */
 	/********************************************/
 	const uint64_t width{ 1280 };
 	const uint64_t height{ 720 };
