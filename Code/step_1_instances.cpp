@@ -98,4 +98,15 @@ int main()
 	while (!glfwWindowShouldClose(window)) {
 		glfwPollEvents();
 	}
+
+
+
+	/**************/
+	/* Destroying */
+	/**************/
+	// Instance
+	vkDestroyInstance(vk_instance, nullptr);
+
+	glfwTerminate();
+	std::cout << "Programme terminated successfully" << std::endl;
 }

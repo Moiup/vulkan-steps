@@ -111,4 +111,16 @@ int main()
 	while (!glfwWindowShouldClose(window)) {
 		glfwPollEvents();
 	}
+
+	
+	/**************/
+	/* Destroying */
+	/**************/
+	// Surface
+	vkDestroySurfaceKHR(vk_instance, surface, nullptr);
+	// Instance
+	vkDestroyInstance(vk_instance, nullptr);
+
+	glfwTerminate();
+	std::cout << "Programme terminated successfully" << std::endl;
 }

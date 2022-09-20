@@ -46,4 +46,7 @@ int main()
 	while (!glfwWindowShouldClose(window)) {
 		glfwPollEvents();
 	}
+
+	glfwTerminate();
+	std::cout << "Programme terminated successfully" << std::endl;
 }

@@ -7,6 +7,8 @@ We can enable layers. I made the choice to print all the available layers and al
 
 The function [`glfwGetRequiredInstanceExtensions`](https://www.glfw.org/docs/3.3/group__vulkan.html#ga99ad342d82f4a3421e2864978cb6d1d6) returns provides the extensions needed when using GLFW.
 
+Do not forget to destroy the instance at the end with: [`vkDestroyInstance`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap4.html#vkDestroyInstance).
+
 ```C++
     /**************************************************************/
 	/* Step 1: Instances (4.2.)                                   */

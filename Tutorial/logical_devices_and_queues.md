@@ -13,6 +13,8 @@ With the [`VkDeviceQueueCreateInfo`](https://registry.khronos.org/vulkan/specs/1
 
 After creating the logical device, we need to get the actual queues with [`vkGetDeviceQueue`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap5.html#vkGetDeviceQueue).
 
+Do not forget to destroy the logical device at the end with: [`vkDestroyDevice`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap5.html#vkDestroyDevice).
+
 ```C++
     /**************************************************************/
 	/* Step 3.2: Logical Devices and Queues (5.2 and 5.3)         */

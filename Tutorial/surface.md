@@ -4,6 +4,8 @@ The function to call is [`glfwCreateWindowSurface`](https://www.glfw.org/docs/3.
 
 ## **The Code**
 
+Do not forget to destroy the surface at the end with: [`vkDestroySurfaceKHR`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap33.html#vkDestroySurfaceKHR).
+
 ```C++
     /**************************************************************/
 	/* Step 2: Surface                                            */
