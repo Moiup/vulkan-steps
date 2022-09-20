@@ -161,7 +161,7 @@ After creating the logical device, we need to get the actual queues with [`vkGet
 	);
 ```
 
-File: [step_3_1_logical_devices_and_queues.cpp](../Code/step_3_1_logical_devices_and_queues.cpp)
+File: [step_3_2_logical_devices_and_queues.cpp](../Code/step_3_2_logical_devices_and_queues.cpp)
 
 | Previous | Next |
 |---|---|
