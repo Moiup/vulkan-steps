@@ -1,4 +1,4 @@
-# **Step 2.1: Physical Devices (5.1.)**
+# **Step 4: Command Buffers (6.)**
 ## **Hints**
 
 ## **The Code**
@@ -12,4 +12,4 @@ File: [](../Code/)
 
 | Previous | Next |
 |---|---|
-| []() | []() |
+| [Step 3.2: Logical Devices and Queues (5.2 and 5.3)]() | []() |

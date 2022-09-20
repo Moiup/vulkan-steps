@@ -6,4 +6,4 @@ The steps to get the physical devices and to create logical devices are the foll
 
 | Previous | Next |
 |---|---|
-| [Step 2: Surface](surface.md) | [Step 3.1: Physical Devices](physical_devices.md) |
+| [Step 2: Surface](surface.md) | [Step 3.1: Physical Devices (5.1.)](physical_devices.md) |

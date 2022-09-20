@@ -34,6 +34,7 @@ The code that I provide is not the cleanest, and this is done on purpose. Why? B
  - [Environment configuration](Tutorial/environment_configuration.md)
  - [Step 0: Window creation with GLFW](Tutorial/context_initialisation_with_GLFW.md)
  - [Step 1: Instances (4.2.)](Tutorial/instance.md)
+ - [Step 2: Surfaces](Tutorial/surface.md)
  - [Step 3: Devices and Queues (5.)](Tutorial/devices_and_queues.md)
     - [Step 3.1: Physical Devices (5.1.)](Tutorial/physical_devices.md)
     - [Step 3.2: Logical Devices and Queues (5.2. and 5.3.)](Tutorial/logical_devices_and_queues.md)

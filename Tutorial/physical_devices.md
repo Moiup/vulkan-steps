@@ -47,4 +47,4 @@ File: [step_3_1_physical_devices.cpp](../Code/step_3_1_physical_devices.cpp)
 
 | Previous | Next |
 |---|---|
-| [Step 3: Devices and Queues](devices_and_queues.md) | [Step 3.2: Logical Devices and Queues](logical_devices_and_queues.md) |
+| [Step 3: Devices and Queues (5.)](devices_and_queues.md) | [Step 3.2: Logical Devices and Queues (5.2. and 5.3.)](logical_devices_and_queues.md) |
