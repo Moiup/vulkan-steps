@@ -1,14 +1,42 @@
-# **Step 1: Instances (4.2.)**
-## **Hints**
-To create an instance, the function needed is [`vkCreateInstance`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap4.html#vkCreateInstance). It will require to fill a [`VkInstanceCreateInfo`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap4.html#VkInstanceCreateInfo) structure to which we can point to a [`VkApplicationInfo`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap4.html#VkApplicationInfo) structure (not mendatory).
+#define GLFW_INCLUDE_VULKAN
+#include <GLFW/glfw3.h>
+#include <glm/glm.hpp>
+#include <glm/gtc/matrix_transform.hpp>
 
-## **The Code**
-We can enable layers. I made the choice to print all the available layers and also choose the [`"VK_LAYER_KHRONOS_validation"`](https://vulkan.lunarg.com/doc/view/1.2.170.0/linux/khronos_validation_layer.html) so Vulkan display some of the error messages. This is not mendatory, one can chose not to have layers.
+#include <iostream>
+#include <fstream>
+#include <stdexcept>
+#include <vector>
+#include <string>
+#include <vulkan/vulkan.h>
 
-The function [`glfwGetRequiredInstanceExtensions`](https://www.glfw.org/docs/3.3/group__vulkan.html#ga99ad342d82f4a3421e2864978cb6d1d6) returns provides the extensions needed when using GLFW.
+int main()
+{
+	/********************************************/
+	/* Step 0: Window creation with GLFW */
+	/********************************************/
+	const uint64_t width{ 1280 };
+	const uint64_t height{ 720 };
 
-```C++
-    /********************/
+	GLFWwindow* window;
+
+	std::cout << "Initializing GLFW..." << std::endl;
+	if (!glfwInit()) {
+		throw std::runtime_error("Failed to initialise GLFW");
+	}
+	std::cout << "GLFW initialized with success." << std::endl;
+
+	std::cout << "GLFW window creation." << std::endl;
+	glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API);
+	glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
+	window = glfwCreateWindow(width, height, "Le Cube", nullptr, nullptr);
+	if (!window) {
+		glfwTerminate();
+		throw std::runtime_error("Window creation failed.");
+	}
+	std::cout << "GLFW window created successfully." << std::endl;
+
+	/********************/
 	/* Instances (4.2.) */
 	/********************/
 	VkResult vk_result = VK_SUCCESS;
@@ -61,10 +89,11 @@ The function [`glfwGetRequiredInstanceExtensions`](https://www.glfw.org/docs/3.3
 		throw std::runtime_error("Instance creation failed!");
 	}
 	std::cout << "Instance created successfully." << std::endl;
-```
 
-File: [step_1_instances.cpp](../Code/step_1_instances.cpp)
-
-| Previous | Next |
-|---|---|
-| [Window creation with GLFW](context_initialisation_with_GLFW.md) | [Step 2: Devices and Queues](devices_and_queues.md) |
+	/********************/
+	/* Game Loop        */
+	/********************/
+	while (!glfwWindowShouldClose(window)) {
+		glfwPollEvents();
+	}
+}

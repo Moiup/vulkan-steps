@@ -57,6 +57,8 @@ int main()
 }
 ```
 
+File: [step_0_window_creation_with_glfw.cpp](../Code/step_0_window_creation_with_glfw.cpp)
+
 | Previous | Next |
 |---|---|
-| [Environment configuration](environment_configuration.md) | [Step 1: Instance (4.2.)](instance.md) |
+| [Environment configuration](environment_configuration.md) | [Step 1: Instances (4.2.)](instance.md) |
