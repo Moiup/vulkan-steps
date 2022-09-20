@@ -12,7 +12,6 @@
 
 int main()
 {
-	
 	/**************************************************************/
 	/* Step 0: Window creation with GLFW                          */
 	/**************************************************************/
@@ -91,6 +90,20 @@ int main()
 		throw std::runtime_error("Instance creation failed!");
 	}
 	std::cout << "Instance created successfully." << std::endl;
+
+	/**************************************************************/
+	/* Step 2: Surface                                            */
+	/**************************************************************/
+	VkSurfaceKHR surface;
+	vk_result = glfwCreateWindowSurface(
+		vk_instance,
+		window,
+		nullptr,
+		&surface
+	);
+	if (vk_result != VK_SUCCESS) {
+		throw std::runtime_error("Error: failed to create window surface.");
+	}
 
 	/********************/
 	/* Game Loop        */

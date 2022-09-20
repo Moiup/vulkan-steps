@@ -6,4 +6,4 @@ The steps to get the physical devices and to create logical devices are the foll
 
 | Previous | Next |
 |---|---|
-| []() | []() |
+| [Step 1: Instances](instance.md) | [Step 2.1: Physical Devices](physical_devices.md) |

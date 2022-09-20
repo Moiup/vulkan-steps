@@ -22,9 +22,11 @@ The while loop which will be used for rendering is already written, otherwise th
 
 int main()
 {
-	/********************************************/
-	/* Step 0: Window creation with GLFW */
-	/********************************************/
+	/**************************************************************/
+	/* Step 0: Window creation with GLFW                          */
+	/**************************************************************/
+	VkResult vk_result = VK_SUCCESS;
+
 	const uint64_t width{ 1280 };
 	const uint64_t height{ 720 };
 
