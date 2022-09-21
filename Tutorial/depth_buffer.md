@@ -9,6 +9,11 @@ After creating the image, we need to allocate memory. To do so, we first get the
 
 Now, we bind the image memory thanks to [`vkBindImageMemory`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap12.html#vkBindImageMemory) and create the image view thanks to [`vkCreateImageView`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap12.html#vkCreateImageView).
 
+Do not forget to destroy the image view, to free the memory and destroy the image:
+ - [`vkDestroyImageView`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap12.html#vkDestroyImageView)
+ - [`vkFreeMemory`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap11.html#vkFreeMemory)
+ - [`vkDestroyImage`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap12.html#vkDestroyImage)
+
 ```C++
     /**************************************************************/
 	/* Step 6: Depth Buffer (12.3., 12.5. and 12.7.)              */
