@@ -15,7 +15,7 @@ Each step of the tutorial, but the 0, will be composed of three parts:
 
 If it is not already done, [click here to open the Vulkan specification](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/index.html).
 
-The main source of information that helped build a first Vulkan application where:
+The main source of information that helped me build a first Vulkan application where:
  - [LunarG](https://vulkan.lunarg.com/doc/view/1.2.154.1/windows/tutorial/html/index.html)
  - [Vulkan Tutorial](https://vulkan-tutorial.com/)
  - [The Vulkan Specification](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/index.html), of course.
