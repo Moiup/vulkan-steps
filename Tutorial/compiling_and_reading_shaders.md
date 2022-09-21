@@ -39,6 +39,7 @@ static std::vector<char> readFile(const std::string& file_name) {
 }
 ```
 
+File: [step_10_1_compiling_and_reading.cpp](../Code/step_10_1_compiling_and_reading_shaders.cpp)
 
 | Previous | Next |
 |---|---|

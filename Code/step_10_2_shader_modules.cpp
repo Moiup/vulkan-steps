@@ -880,7 +880,7 @@ int main()
 	/* Step 10: Shaders (9.)                                      */
 	/**************************************************************/
 	/**************************************************************/
-	/* Step 10.1: Shader Modules (9.1)                            */
+	/* Step 10.2: Shader Modules (9.1)                            */
 	/**************************************************************/
 	// Vertex shader
 	std::vector<char> vertex_shader_text = readFile("shaders/vert.spv");
