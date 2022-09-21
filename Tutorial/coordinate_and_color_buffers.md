@@ -204,4 +204,4 @@ File: [step_12_2_coordinate_and_color_buffers.cpp](../Code/step_12_2_coordinate_
 
 | Previous | Next |
 |---|---|
-| [Step 12.2: Coordinate and Color Buffers (12.1 and 12.7)](coordinate_and_color_buffers.md) | [Step 13: Graphics Pipelines (10.2.)](graphics_pipelines.md) |
+| [Step 12.1: Data](Tutorial/data.md) | [Step 13: Graphics Pipelines (10.2.)](graphics_pipelines.md) |
