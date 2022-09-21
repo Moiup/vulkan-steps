@@ -1,4 +1,4 @@
-# **Step 2.1: Depth Buffer (12.3., 12.5. and 12.7.)**
+# **Step 6: Depth Buffer (12.3., 12.5. and 12.7.)**
 ## **Hints**
 Creating a Depth Buffer comes to creating an image view. To do saw, the function to call is [`vkCreateImageView`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap12.html#vkCreateImageView).
 
