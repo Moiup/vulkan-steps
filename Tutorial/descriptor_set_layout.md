@@ -5,6 +5,15 @@ Descriptor Set Layout are created using [`vkCreateDescriptorSetLayout`](https://
 ## **The Code**
 When creating Descriptor Set Layout, we are in fact creating an array of [`VkDescriptorSetLayout`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap14.html#descriptorsets-setlayout), this will, in parallel, require an array of [`VkDescriptorSetLayoutBinding`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap14.html#VkDescriptorSetLayoutBinding) to be affected inside the [`VkDescriptorSetLayoutCreateInfo`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap14.html#VkDescriptorSetLayoutCreateInfo) structure. Then we can call [`vkCreateDescriptorSetLayout`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap14.html#vkCreateDescriptorSetLayout).
 
+In [`VkDescriptorSetLayoutBinding`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap14.html#VkDescriptorSetLayoutBinding) the `binding` field must take the binding value given to the MVP Uniform Buffer in the Vertex Shader, in our case it is 0.
+
+```C
+// UNIFORM BUFFER
+layout (std140, binding = 0) uniform buf{
+    mat4 mvp;
+} ubuf_mvp;
+```
+
 We need to destroy each Descriptor Set Layout with [`vkDestroyDescriptorSetLayout`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap14.html#vkDestroyDescriptorSetLayout).
 
 ```C++
