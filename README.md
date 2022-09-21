@@ -54,7 +54,7 @@ The code that I provide is not the cleanest, and this is done on purpose. Why? B
  - [Step 10: Shader](Tutorial/shader.md)
     - [Step 10.1: Compiling and reading shaders](Tutorial/compiling_and_reading_shaders.md)
     - [Step 10.2: Shader Modules (9.1)](Tutorial/shader_modules.md)
- - [Step 11: Framebuffer (8.3.)](Tutorial/framebuffer.md)
+ - [Step 11: Framebuffers (8.3.)](Tutorial/framebuffers.md)
  - [Step 12: Vertex Buffers (12.1. and 12.7.)](Tutorial/vertex_buffers.md)
  - [Step 13: Graphics Pipelines (10.2.)](Tutorial/graphics_pipelines.md)
  - [Step 14: Fences and Semaphores (7.3. and 7.4.)](Tutorial/fences_and_semaphores.md)
