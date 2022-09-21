@@ -95,4 +95,4 @@ File: [step_9_render_pass.cpp](../Code/step_9_render_pass.cpp)
 
 | Previous | Next |
 |---|---|
-| [Step 8.4: Descriptor Set Updates (14.2.4.)](descriptor_set_updates.md) | [Step 10: Shader (9.1)](shader.md) |
+| [Step 8.4: Descriptor Set Updates (14.2.4.)](descriptor_set_updates.md) | [Step 10: Shader](shader.md) |
