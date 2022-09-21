@@ -100,6 +100,8 @@ The cube colors:
 	};
 ```
 
+File: [step_12_1_data.cpp](../Code/step_12_1_data.cpp)
+
 | Previous | Next |
 |---|---|
 | [Step 12: Vertex Buffers (12.1. and 12.7.)](vertex_buffers.md) | [Step 12.2: Coordinate and Color Buffers (12.1 and 12.7)](coordinate_and_color_buffers.md) |
