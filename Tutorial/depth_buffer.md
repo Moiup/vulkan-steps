@@ -1,8 +1,13 @@
 # **Step 2.1: Depth Buffer (12.3., 12.5. and 12.7.)**
 ## **Hints**
+Creating a Depth Buffer comes to creating an image view. To do saw, the function to call is [`vkCreateImageView`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap12.html#vkCreateImageView).
 
 ## **The Code**
+When using [`vkCreateImageView`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap12.html#vkCreateImageView) we need to fill a [`VkImageViewCreateInfo`] which requires to create a [`VkImage`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap12.html#resources-images) by calling [`vkCreateImage`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap12.html#vkCreateImage).
 
+After creating the image, we need to allocate memory. To do so, we first get the memory requirements with [`vkGetImageMemoryRequirements`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap12.html#vkGetImageMemoryRequirements), then the memory properties of the physical device with [`vkGetPhysicalDeviceMemoryProperties`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap11.html#vkGetPhysicalDeviceMemoryProperties). We need to iterate though the `memoryTypes` field of the [`VkPhysicalDeviceMemoryProperties`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap11.html#VkPhysicalDeviceMemoryProperties) to find the one having the `propertyFlags` that we are looking for. We can finally allocate the memory with [`vkAllocateMemory`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap11.html#vkAllocateMemory).
+
+Now, we bind the image memory thanks to [`vkBindImageMemory`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap12.html#vkBindImageMemory) and create the image view thanks to [`vkCreateImageView`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap12.html#vkCreateImageView).
 
 ```C++
     /**************************************************************/
