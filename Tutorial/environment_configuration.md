@@ -9,4 +9,4 @@ However, the code written in this tutorial is made for Windows, you might need t
 
 | Previous | Next |
 |---|---|
-| [Introduction](../README.md) | [Step 0: Window creation with GLFW](context_initialisation_with_GLFW.md) |
+| [Introduction](../README.md) | [Shader files](shader_files.md) |

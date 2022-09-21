@@ -32,6 +32,7 @@ The code that I provide is not the cleanest, and this is done on purpose. Why? B
 ## **Table of contents**
 
  - [Environment configuration](Tutorial/environment_configuration.md)
+ - [Shader files](Tutorial/shader_files.md)
  - [Step 0: Window creation with GLFW](Tutorial/context_initialisation_with_GLFW.md)
  - [Step 1: Instances (4.2.)](Tutorial/instance.md)
  - [Step 2: Surfaces](Tutorial/surface.md)

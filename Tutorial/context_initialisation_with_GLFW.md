@@ -66,4 +66,4 @@ File: [step_0_window_creation_with_glfw.cpp](../Code/step_0_window_creation_with
 
 | Previous | Next |
 |---|---|
-| [Environment configuration](environment_configuration.md) | [Step 1: Instances (4.2.)](instance.md) |
+| [Shader files](shader_files.md) | [Step 1: Instances (4.2.)](instance.md) |

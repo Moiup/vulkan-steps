@@ -1,4 +1,4 @@
-# **Step 2.1: Physical Devices (5.1.)**
+# **Step 8: Descriptor Sets (14.2.)**
 ## **Hints**
 
 ## **The Code**
@@ -12,4 +12,4 @@ File: [](../Code/)
 
 | Previous | Next |
 |---|---|
-| []() | []() |
+| [Step 7: Uniform Buffer (12.1. and 12.7.)](Tutorial/uniform_buffer.md) | []() |
