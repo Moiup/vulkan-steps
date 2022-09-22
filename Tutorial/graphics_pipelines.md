@@ -3,7 +3,18 @@
 To create the graphic pipeline: [`vkCreateGraphicsPipelines`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap10.html#vkCreateGraphicsPipelines).
 
 ## **The Code**
+To be able to create a graphic pipeline, we need to fill a [`VkGraphicsPipelineCreateInfo`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap10.html#VkGraphicsPipelineCreateInfo) structure. In order to do so, we need:
+    - to create an array of [`VkPipelineShaderStageCreateInfo`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap10.html#VkPipelineShaderStageCreateInfo) (already created at the [shader modules chapter](shader_modules.md)).
+    - to fill a [`VkPipelineVertexInputStateCreateInfo`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap22.html#VkPipelineVertexInputStateCreateInfo) structure.
+    - to fill a [`VkPipelineInputAssemblyStateCreateInfo`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap21.html#VkPipelineInputAssemblyStateCreateInfo) structure.
+    - to fill a [`VkPipelineViewportStateCreateInfo`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap26.html#VkPipelineViewportStateCreateInfo) structure.
+    - to fill a [`VkPipelineRasterizationStateCreateInfo`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap27.html#VkPipelineRasterizationStateCreateInfo) structure.
+    - to fill a [`VkPipelineMultisampleStateCreateInfo`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap27.html#VkPipelineMultisampleStateCreateInfo) structure.
+    - to fill a [`VkPipelineDepthStencilStateCreateInfo`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap28.html#VkPipelineDepthStencilStateCreateInfo) structure.
+    - to fill a [`VkPipelineColorBlendStateCreateInfo`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap29.html#VkPipelineColorBlendStateCreateInfo) structure.
+    - to fill a [`VkPipelineDynamicStateCreateInfo`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap10.html#VkPipelineDynamicStateCreateInfo) structure.
 
+At the end, do not forget to destroy the Graphic Pipeline with [`vkDestroyPipeline`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap10.html#vkDestroyPipeline).
 
 ```C++
     /**************************************************************/
