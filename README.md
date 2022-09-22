@@ -60,4 +60,6 @@ The code that I provide is not the cleanest, and this is done on purpose. Why? B
     - [Step 12.2: Coordinate and Color Buffers (12.1 and 12.7)](Tutorial/coordinate_and_color_buffers.md)
  - [Step 13: Graphics Pipelines (10.2.)](Tutorial/graphics_pipelines.md)
  - [Step 14: Fences and Semaphores (7.3. and 7.4.)](Tutorial/fences_and_semaphores.md)
+    - [Step 14.1: Fences (7.3.)](Tutorial/fences.md)
+    - [Step 14.2: Semaphores (7.4)](Tutorial/semaphores.md)
  - [Step 15: Drawing (21.3. and 33.10.)](Tutorial/drawing.md)
