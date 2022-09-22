@@ -20,6 +20,10 @@ After the bindings, we can finally call [vkCmdDraw](https://registry.khronos.org
 
 To display the drawing, we must first submit the command buffer with [`vkQueueSubmit`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap6.html#vkQueueSubmit) and finally present it with [`vkQueuePresentKHR`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap33.html#vkQueuePresentKHR)
 
+Now, you should see "LE CUBE"!:
+
+![3D Cube](../Img/cube.png "3D Cube")
+
 ```C++
     /**************************************************************/
 	/* Step 15: Drawing (21.3. and 33.10.)                        */
