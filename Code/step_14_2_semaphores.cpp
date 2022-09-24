@@ -993,48 +993,48 @@ int main()
 	/**************************************************************/
 	/* Step 12: Vertex Buffer (12.1. and 12.7.)                   */
 	/**************************************************************/
-	/**************************************************************/
+		/**************************************************************/
 	/* Step 12.1: Data                                            */
 	/**************************************************************/
 	// Creating the vertex
 	// Coordinate
 	std::vector<glm::vec3> vert_coord = {
-		// Avant
+		// Front
 		glm::vec3(1,  1, -1),
 		glm::vec3(-1, -1, -1),
 		glm::vec3(-1,  1, -1),
 		glm::vec3(-1, -1, -1),
 		glm::vec3(1,  1, -1),
 		glm::vec3(1, -1, -1),
-		// Droite
+		// Right
 		glm::vec3(1, -1, -1),
 		glm::vec3(1,  1,  1),
 		glm::vec3(1,  1, -1),
 		glm::vec3(1, -1, -1),
 		glm::vec3(1, -1,  1),
 		glm::vec3(1,  1,  1),
-		// Arriere
+		// Back
 		glm::vec3(-1, -1,  1),
 		glm::vec3(1, -1,  1),
 		glm::vec3(1,  1,  1),
 		glm::vec3(-1, -1,  1),
 		glm::vec3(1,  1,  1),
 		glm::vec3(-1,  1,  1),
-		// Gauche
+		// Left
 		glm::vec3(-1, -1, -1),
 		glm::vec3(-1, -1,  1),
 		glm::vec3(-1,  1,  1),
 		glm::vec3(-1, -1, -1),
 		glm::vec3(-1,  1,  1),
 		glm::vec3(-1,  1, -1),
-		// Bas
+		// Bottom
 		glm::vec3(-1, -1, -1),
 		glm::vec3(-1, -1,  1),
 		glm::vec3(1, -1, -1),
 		glm::vec3(1, -1, -1),
 		glm::vec3(-1, -1,  1),
 		glm::vec3(1, -1,  1),
-		// Haut
+		// Top
 		glm::vec3(-1,  1, -1),
 		glm::vec3(-1,  1,  1),
 		glm::vec3(1,  1,  1),
@@ -1044,42 +1044,42 @@ int main()
 	};
 	// Color
 	std::vector<glm::vec4> vert_color = {
-		// Devant
+		// Front
 		glm::vec4(1, 0, 0, 1),
 		glm::vec4(1, 0, 0, 1),
 		glm::vec4(1, 0, 0, 1),
 		glm::vec4(1, 0, 0, 1),
 		glm::vec4(1, 0, 0, 1),
 		glm::vec4(1, 0, 0, 1),
-		// Droite
+		// Right
 		glm::vec4(0, 0, 1, 1),
 		glm::vec4(0, 0, 1, 1),
 		glm::vec4(0, 0, 1, 1),
 		glm::vec4(0, 0, 1, 1),
 		glm::vec4(0, 0, 1, 1),
 		glm::vec4(0, 0, 1, 1),
-		// Arrière
+		// Back
 		glm::vec4(0, 1, 0, 1),
 		glm::vec4(0, 1, 0, 1),
 		glm::vec4(0, 1, 0, 1),
 		glm::vec4(0, 1, 0, 1),
 		glm::vec4(0, 1, 0, 1),
 		glm::vec4(0, 1, 0, 1),
-		// Gauche
+		// Left
 		glm::vec4(0, 1, 1, 1),
 		glm::vec4(0, 1, 1, 1),
 		glm::vec4(0, 1, 1, 1),
 		glm::vec4(0, 1, 1, 1),
 		glm::vec4(0, 1, 1, 1),
 		glm::vec4(0, 1, 1, 1),
-		// Haut
+		// Bottom
 		glm::vec4(1, 0, 1, 1),
 		glm::vec4(1, 0, 1, 1),
 		glm::vec4(1, 0, 1, 1),
 		glm::vec4(1, 0, 1, 1),
 		glm::vec4(1, 0, 1, 1),
 		glm::vec4(1, 0, 1, 1),
-		// Bas
+		// Top
 		glm::vec4(1, 1, 0, 1),
 		glm::vec4(1, 1, 0, 1),
 		glm::vec4(1, 1, 0, 1),
