@@ -191,7 +191,7 @@ int main()
 	VkQueue graphic_queue = nullptr;
 	int32_t nb_graphics_queue_families_to_create = 1;
 	std::vector<VkDeviceQueueCreateInfo> graphics_queues_arr(nb_graphics_queue_families_to_create);
-	for (uint32_t i = 0; i < graphics_queues_arr.size(); i++) {
+	for (uint32_t i = 0; i < queue_family_property_count; i++) {
 		if (!(queue_family_propertie_arr[i].queueFlags & VK_QUEUE_GRAPHICS_BIT
 			&&
 			queue_family_propertie_arr[i].queueFlags & VK_QUEUE_COMPUTE_BIT
@@ -223,7 +223,7 @@ int main()
 	VkQueue present_queue = nullptr;
 	int32_t nb_present_queue_families_to_create = 1;
 	std::vector<VkDeviceQueueCreateInfo> present_queues_arr(nb_present_queue_families_to_create);
-	for (uint32_t i = 0; i < present_queues_arr.size(); i++) {
+	for (uint32_t i = 0; i < queue_family_property_count; i++) {
 		if (!(queue_family_propertie_arr[i].queueFlags & VK_QUEUE_GRAPHICS_BIT)) {
 			continue;
 		}
