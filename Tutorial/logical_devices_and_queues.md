@@ -42,7 +42,7 @@ Do not forget to destroy the logical device at the end with: [`vkDestroyDevice`]
 	VkQueue graphic_queue = nullptr;
 	int32_t nb_graphics_queue_families_to_create = 1;
 	std::vector<VkDeviceQueueCreateInfo> graphics_queues_arr(nb_graphics_queue_families_to_create);
-	for (uint32_t i = 0; i < graphics_queues_arr.size(); i++) {
+	for (uint32_t i = 0; i < queue_family_property_count; i++) {
 		if (!(queue_family_propertie_arr[i].queueFlags & VK_QUEUE_GRAPHICS_BIT
 			&&
 			queue_family_propertie_arr[i].queueFlags & VK_QUEUE_COMPUTE_BIT
@@ -74,7 +74,7 @@ Do not forget to destroy the logical device at the end with: [`vkDestroyDevice`]
 	VkQueue present_queue = nullptr;
 	int32_t nb_present_queue_families_to_create = 1;
 	std::vector<VkDeviceQueueCreateInfo> present_queues_arr(nb_present_queue_families_to_create);
-	for (uint32_t i = 0; i < present_queues_arr.size(); i++) {
+	for (uint32_t i = 0; i < queue_family_property_count; i++) {
 		if (!(queue_family_propertie_arr[i].queueFlags & VK_QUEUE_GRAPHICS_BIT)) {
 			continue;
 		}
@@ -112,7 +112,7 @@ Do not forget to destroy the logical device at the end with: [`vkDestroyDevice`]
 	std::vector<VkDeviceQueueCreateInfo> queues_create_info{ graphics_queues_arr[0] };
 	std::vector<uint32_t> queue_family_indexes = { graphics_queues_arr[0].queueFamilyIndex };
 
-    // Checking if the found queue are in fact from the same family or not
+	// Checking if the found queue are in fact from the same family or not
 	if (present_queues_arr[0].queueFamilyIndex != graphics_queues_arr[0].queueFamilyIndex) {
 		queues_create_info.push_back(present_queues_arr[0]);
 		queue_family_indexes.push_back(present_queues_arr[0].queueFamilyIndex);
@@ -157,7 +157,7 @@ Do not forget to destroy the logical device at the end with: [`vkDestroyDevice`]
 	);
 	vkGetDeviceQueue(
 		logical_device,
-		present_queues_arr[0]. ,
+		present_queues_arr[0].queueFamilyIndex,
 		0,
 		&present_queue
 	);
