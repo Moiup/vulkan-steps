@@ -20,9 +20,11 @@ The main source of information that helped me build a first Vulkan application w
  - [Vulkan Tutorial](https://vulkan-tutorial.com/)
  - [The Vulkan Specification](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/index.html), of course.
 
-Our goal is to draw a cube made during a rendering loop (like in video games), thus all the steps are build toward this goal.
+Our goal is to draw a cube made during a rendering loop (like in video games), thus all the steps are build toward this goal. It is just a simple exemple with a shader that takes as input as shader storage buffer and add for each value the id of the thread being executed before storing it in an output shader storage buffer. 
 
 ![3D Cube](Img/cube.png "3D Cube")
+
+In a second part, we are going to code a compute pipeline. The goal is to run a compute shader followed by the rendering.
 
 ### **Disclaimer**
 This is not a tutorial to teach rendering, having a background in others graphic API such as OpenGL is almost mendatory. I will not go in depth on why we do that or that. There are already good tutorial for this such as the [Vulkan Tutorial](https://vulkan-tutorial.com/).
@@ -67,3 +69,16 @@ The code that I provide is not the cleanest, and this is done on purpose. Why? B
  - [Step 15: Drawing (21.3. and 33.10.)](Tutorial/drawing.md)
 
 ### Compute Pipeline
+ - [Comp 1: Compute Queue]()
+ - [Comp 2: Compute Shader]()
+ - [Comp 3: Descriptor Sets]()
+   - [Comp 3.1: Descriptor Set Layout]()
+   - [Comp 3.2: Pipeline Layouts]()
+   - [Comp 3.3: Allocation of Descriptor Sets]()
+   - [Comp 3.4: Descriptor Set Updates]()
+ - [Comp 4: Compute Pipeline]()
+ - [Comp 5: Fences and Semaphores]()
+   - [Comp 5.1: Fences]()
+   - [Comp 5.2: Semaphores]()
+ - [Comp 6: Dispatch]()
+ - [Comp 7: Drawing]()
