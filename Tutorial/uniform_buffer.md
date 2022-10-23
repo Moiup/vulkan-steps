@@ -104,7 +104,7 @@ Do not forget to free the memory as well as destroying the buffer:
 	}
 
 	// Mapping the memory
-	float* mvp_copy = new float[4 * 4];
+	float* mvp_copy;
 	vk_result = vkMapMemory(
 		logical_device,
 		uniform_buffer_memory,

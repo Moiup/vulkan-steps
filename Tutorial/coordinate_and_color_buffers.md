@@ -88,7 +88,7 @@ Do not forget to free the memory as well as destroying the buffer:
 	}
 	std::cout << "coord_buffer_mem_req.size: " << coord_buffer_mem_req.size << std::endl;
 	// Maping value
-	float* coord_copy = new float[vert_coord.size() * vert_coord[0].length()];
+	float* coord_copy;
 	vk_result = vkMapMemory(
 		logical_device,
 		coord_buffer_memory,
@@ -171,7 +171,7 @@ Do not forget to free the memory as well as destroying the buffer:
 	}
 
 	// Mapping value
-	float* color_copy = new float[vert_color.size() * vert_color[0].length()];
+	float* color_copy;
 	vk_result = vkMapMemory(
 		logical_device,
 		color_buffer_memory,

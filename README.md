@@ -31,6 +31,8 @@ The code that I provide is not the cleanest, and this is done on purpose. Why? B
 
 ## **Table of contents**
 
+### Graphic Pipeline
+
  - [Environment configuration](Tutorial/environment_configuration.md)
  - [Shader files](Tutorial/shader_files.md)
  - [Step 0: Window creation with GLFW](Tutorial/context_initialisation_with_GLFW.md)
@@ -63,3 +65,5 @@ The code that I provide is not the cleanest, and this is done on purpose. Why? B
     - [Step 14.1: Fences (7.3.)](Tutorial/fences.md)
     - [Step 14.2: Semaphores (7.4)](Tutorial/semaphores.md)
  - [Step 15: Drawing (21.3. and 33.10.)](Tutorial/drawing.md)
+
+### Compute Pipeline
