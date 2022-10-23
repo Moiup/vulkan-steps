@@ -717,7 +717,7 @@ int main()
 	if (vk_result != VK_SUCCESS) {
 		throw std::runtime_error("Error: failed creating the pipeline layout!");
 	}
-	
+
 	/**************************************************************/
 	/* Step 8.3: Allocation of Descriptor Sets (14.2.3.)          */
 	/**************************************************************/
@@ -1739,13 +1739,8 @@ int main()
 		glfwPollEvents();
 	}
 
-	if (current_frame == 0) {
-		current_frame = nb_frame;
-	}
-
-	vkWaitForFences(
-		logical_device, 1, &in_flight_fence_arr[current_frame - 1], VK_TRUE, UINT64_MAX
-	);
+	// To wait for every fences and semaphores to be released
+	vkDeviceWaitIdle(logical_device);
 
 	/**************/
 	/* Destroying */
