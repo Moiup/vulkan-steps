@@ -12,4 +12,4 @@ File: [](../Code/)
 
 | Previous | Next |
 |---|---|
-| [Introduction](../README.md) | [Comp 2: Compute Shader](compute/comp2_compute_shader) |
+| [Introduction](../../README.md) | [Comp 2: Compute Shader](comp2_compute_shader) |
