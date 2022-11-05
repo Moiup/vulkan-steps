@@ -70,7 +70,7 @@ This must be written after the logical device creation.
 	);
 ```
 
-File: [](../Code/)
+File: [comp1_compute_queue.cpp](../../Code/comp1_compute_queue.cpp)
 
 | Previous | Next |
 |---|---|
