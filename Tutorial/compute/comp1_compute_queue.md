@@ -3,7 +3,7 @@
 When creating the logical device, we created a graphic queue. Here, we want this same logical device to also have a compute queue. The objectif is to correctly fill the structure [`VkDeviceQueueCreateInfo`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap5.html#devsandqueues-queue-creation)
 
 ## **The Code**
-First thing first, we need to retreive the existing queue family properties, but to change a little bit, we are going to use [`vkGetPhysicalDeviceQueueFamilyProperties2`]().
+First thing first, we need to retreive the existing queue family properties, but to change a little bit, we are going to use [`vkGetPhysicalDeviceQueueFamilyProperties2`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap5.html#vkGetPhysicalDeviceQueueFamilyProperties2).
 
 We need to iterate through the properties found previously and look for a family containing the wanted flags in the `queueFlags` field of the [`VkQueueFamilyProperties`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap5.html#VkQueueFamilyProperties) structure.
 
