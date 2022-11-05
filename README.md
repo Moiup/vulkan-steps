@@ -70,7 +70,7 @@ The code that I provide is not the cleanest, and this is done on purpose. Why? B
 
 ### Compute Pipeline
  - [Comp 0: Introduction](Tutorial/compute/comp0_intro.md)
- - [Comp 1: Compute Queue](Tutorial/compute/comp1_compute_queue.md)
+ - [Comp 1: Compute Queue (5.3)](Tutorial/compute/comp1_compute_queue.md)
  - [Comp 2: Compute Shader](Tutorial/compute/comp2_compute_shader.md)
    - [Comp 2.1: Compiling and reading shaders](Tutorial/comp2_1_compiling_and_reading_shaders.md)
    - [Comp 2.2: Shader Module](Tutorial/comp2_2_compiling_and_reading_shaders.md)
