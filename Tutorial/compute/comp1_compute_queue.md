@@ -1,4 +1,4 @@
-# **Step 0: Window creation with GLFW**
+# **Comp 1: Compute Queue**
 ## **Hints**
 
 
@@ -12,4 +12,4 @@ File: [](../Code/)
 
 | Previous | Next |
 |---|---|
-| [Introduction](../README.md) | [Step 1: Instances (4.2.)](instance.md) |
+| [Introduction](../README.md) | [Comp 2: Compute Shader](compute/comp2_compute_shader) |
