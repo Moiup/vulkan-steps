@@ -40,4 +40,4 @@ C:/VulkanSDK/version_of_Vulkan/Bin/glslc.exe compute.comp -o compute.spv
 
 | Previous | Next |
 |---|---|
-| [Comp 2: Compute Shader](comp2_compute_shader.md) | [Comp 2.2: Shader Module (9.1)](comp2_2_shader_module.md) |
+| [Comp 2: Compute Shader](comp2_compute_shader.md) | [Comp 2.2: Shader Module (9.1.)](comp2_2_shader_module.md) |

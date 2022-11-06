@@ -207,4 +207,4 @@ File: [comp3_storage_buffer.cpp](../../Code/comp3_storage_buffer.cpp)
 
 | Previous | Next |
 |---|---|
-| [Comp 2.2: Shader Module (9.1)](comp2_2_shader_module.md) | [Comp 4: Descriptor Sets](comp4_descriptor_sets.md) |
+| [Comp 2.2: Shader Module (9.1)](comp2_2_shader_module.md) | [Comp 4: Descriptor Sets (14.2.)](comp4_descriptor_sets.md) |

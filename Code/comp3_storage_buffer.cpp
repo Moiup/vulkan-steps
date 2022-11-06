@@ -268,7 +268,7 @@ int main()
 	}
 
 	/**************************************************************/
-	/* Comp 1: Compute Queue (5.3.)                                */
+	/* Comp 1: Compute Queue (5.3.)                               */
 	/**************************************************************/
 	VkQueue compute_queue{};
 	uint32_t compute_queue_family_properties_count = 0;

@@ -11,7 +11,10 @@ We need to iterate through the properties found previously and look for a family
 
 This must be written before the logical device creation.
 ```C++
-VkQueue compute_queue{};
+	/**************************************************************/
+	/* Comp 1: Compute Queue (5.3.)                               */
+	/**************************************************************/
+	VkQueue compute_queue{};
 	uint32_t compute_queue_family_properties_count = 0;
 	std::vector<VkQueueFamilyProperties2> compute_queue_family_properties_arr;
 	vkGetPhysicalDeviceQueueFamilyProperties2(

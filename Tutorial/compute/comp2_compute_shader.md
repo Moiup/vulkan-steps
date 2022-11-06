@@ -6,4 +6,4 @@ Compute Shaders works also in two phases: compiling the shaders, and then creati
 
 | Previous | Next |
 |---|---|
-| [Comp 1: Compute Queue](comp1_compute_queue.md) | [Comp 2.1: Compiling](comp2_1_compiling.md) |
+| [Comp 1: Compute Queue (5.3.)](comp1_compute_queue.md) | [Comp 2.1: Compiling](comp2_1_compiling.md) |
