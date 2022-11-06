@@ -5,7 +5,7 @@ The goal is to create a logical device by calling the function [`vkCreateDevice`
 ## **The Code**
 First thing first, we need to retreive the existing queue family properties by calling [`vkGetPhysicalDeviceQueueFamilyProperties`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap5.html#VkDeviceCreateInfo). 
 
-We will need two queues. For each of them, we need to iterate throug the properties found previously, and look for a family containing the the wanted flags in the `queueFlags` field of the [`VkQueueFamilyProperties`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap5.html#VkQueueFamilyProperties) structure.
+We will need two queues. For each of them, we need to iterate through the properties found previously, and look for a family containing the wanted flags in the `queueFlags` field of the [`VkQueueFamilyProperties`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap5.html#VkQueueFamilyProperties) structure.
 
 Next, we need to define an array of extensions, here it contains only the value [`VK_KHR_SWAPCHAIN_EXTENSION_NAME`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap50.html#_new_enum_constants_37).
 
