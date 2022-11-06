@@ -166,7 +166,7 @@ int main()
 	std::cout << "\t" << discrete_gpu_properties.deviceName << std::endl;
 
 	/**************************************************************/
-	/* Step 3.2: Logical Devices and Queues (5.2 and 5.3)         */
+	/* Step 3.2: Logical Devices and Queues (5.2. and 5.3.)       */
 	/**************************************************************/
 	// Retreiving existing queue
 	uint32_t queue_family_property_count;
@@ -268,7 +268,7 @@ int main()
 	}
 
 	/**************************************************************/
-	/* Comp 1: Compute Queue (5.3)                                */
+	/* Comp 1: Compute Queue (5.3.)                               */
 	/**************************************************************/
 	VkQueue compute_queue{};
 	uint32_t compute_queue_family_properties_count = 0;

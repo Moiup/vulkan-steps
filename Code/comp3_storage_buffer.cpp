@@ -268,7 +268,7 @@ int main()
 	}
 
 	/**************************************************************/
-	/* Comp 1: Compute Queue (5.3)                                */
+	/* Comp 1: Compute Queue (5.3.)                                */
 	/**************************************************************/
 	VkQueue compute_queue{};
 	uint32_t compute_queue_family_properties_count = 0;
@@ -1528,7 +1528,7 @@ int main()
 	/* Comp2: Compute Shader                                      */
 	/**************************************************************/
 	/**************************************************************/
-	/* Comp 2.2: Shader Module (9.1)                              */
+	/* Comp 2.2: Shader Module (9.1.)                             */
 	/**************************************************************/
 	std::vector<char> compute_shader_text = readFile("../shaders/compute.spv");
 	VkShaderModule compute_shader_module = nullptr;
@@ -1564,14 +1564,14 @@ int main()
 	std::cout << "Compute Shader created." << std::endl;
 
 	/**************************************************************/
-	/* Comp 3: Storage Buffer                                     */
+	/* Comp 3: Storage Buffer (12.1. and 12.7.)                   */
 	/**************************************************************/
 	// --- data --- //
 	std::vector<int> input_data(4, 2);
 	std::vector<int> output_data(input_data.size(), -1);
 
 	// --- Storage Buffer --- //
-	// -- INPUT DATA -- //
+	// INPUT DATA
 	VkBuffer input_data_buffer = nullptr;
 	VkBufferCreateInfo input_data_buffer_info{};
 	input_data_buffer_info.sType = VK_STRUCTURE_TYPE_BUFFER_CREATE_INFO;
@@ -1655,7 +1655,7 @@ int main()
 
 	std::cout << "Input data buffer created." << std::endl;
 
-	// -- OUTPUT DATA -- //
+	//-- OUTPUT DATA --//
 	VkBuffer output_data_buffer = nullptr;
 	VkBufferCreateInfo output_data_buffer_info{};
 	output_data_buffer_info.sType = VK_STRUCTURE_TYPE_BUFFER_CREATE_INFO;
