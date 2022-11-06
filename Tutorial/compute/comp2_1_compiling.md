@@ -1,4 +1,4 @@
-# **Comp 2.1: Compiling and Reading shader**
+# **Comp 2.1: Compiling**
 
 ## **Writing shader**
 The shader used in our example. It takes an array as input. It computes the sum between the value stored in the input array and the value of the thread id. The final result is stored in an output array.
@@ -40,4 +40,4 @@ C:/VulkanSDK/version_of_Vulkan/Bin/glslc.exe compute.comp -o compute.spv
 
 | Previous | Next |
 |---|---|
-| [Comp 2: Compute Shader](comp2_compute_shader.md) | [Comp 2.2: Shader Module](comp2_2_shader_module.md) |
+| [Comp 2: Compute Shader](comp2_compute_shader.md) | [Comp 2.2: Shader Module (9.1)](comp2_2_shader_module.md) |
