@@ -54,4 +54,4 @@ File: [comp2_2_shader_module.cpp](../../Code/comp2_2_shader_module.cpp)
 
 | Previous | Next |
 |---|---|
-| [Comp 2.1: Compiling](comp2_1_compiling.md) | [Comp 3: Descriptor Sets](comp3_descriptor_sets.md) |
+| [Comp 2.1: Compiling](comp2_1_compiling.md) | [Comp 3: Storage Buffers](comp3_descriptor_sets.md) |
