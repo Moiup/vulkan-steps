@@ -1,0 +1,23 @@
+#version 450
+
+layout (std430, binding = 0) readonly buffer inputData
+{
+    int input_data[];
+};
+
+layout (std430, binding = 1) writeonly buffer outputData
+{
+    int output_data[];
+};
+
+layout(local_size_x = 8) in;
+void main(){
+    const uint id = gl_GlobalInvocationID.x;
+    const uint data_length = input_data.length();
+
+    if(id > data_length){
+        return;
+    }
+
+    output_data[id] = input_data[id] + int(id);
+}
