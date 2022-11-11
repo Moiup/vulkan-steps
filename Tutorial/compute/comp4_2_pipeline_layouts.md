@@ -1,4 +1,4 @@
-# **Comp 4.2:  Pipeline Layouts (14.2.2.)**
+# **Comp 4.2: Pipeline Layouts (14.2.2.)**
 ## **Hints**
 To create Pipeline Layout, we use the function [`vkCreatePipelineLayout`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap14.html#vkCreatePipelineLayout).
 
