@@ -1789,6 +1789,28 @@ int main()
 	std::vector<VkDescriptorSetLayout> compute_descriptor_set_layout_arr(1, compute_descriptor_set_layout);
 
 	/**************************************************************/
+	/* Comp 4.2: Pipeline Layouts (14.2.2.)                       */
+	/**************************************************************/
+	VkPipelineLayout compute_pipeline_layout = nullptr;
+	VkPipelineLayoutCreateInfo compute_pipeline_layout_info{};
+	compute_pipeline_layout_info.sType = VK_STRUCTURE_TYPE_PIPELINE_LAYOUT_CREATE_INFO;
+	compute_pipeline_layout_info.pNext = nullptr;
+	compute_pipeline_layout_info.flags = 0;
+	compute_pipeline_layout_info.setLayoutCount = compute_descriptor_set_layout_arr.size();
+	compute_pipeline_layout_info.pSetLayouts = compute_descriptor_set_layout_arr.data();
+	compute_pipeline_layout_info.pushConstantRangeCount = 0;
+	compute_pipeline_layout_info.pPushConstantRanges = nullptr;
+	vk_result = vkCreatePipelineLayout(
+		logical_device,
+		&compute_pipeline_layout_info,
+		nullptr,
+		&compute_pipeline_layout
+	);
+	if (vk_result != VK_SUCCESS) {
+		throw std::runtime_error("Error: failed creating the compute pipeline layout!");
+	}
+
+	/**************************************************************/
 	/* Step 14: Fences and Semaphores (7.3. and 7.4.)             */
 	/**************************************************************/
 	/**************************************************************/
@@ -2120,11 +2142,12 @@ int main()
 	for (auto dl : descriptor_set_layout_arr) {
 		vkDestroyDescriptorSetLayout(logical_device, dl, nullptr);
 	}
-    for (auto dl : compute_descriptor_set_layout_arr) {
+	for (auto dl : compute_descriptor_set_layout_arr) {
 		vkDestroyDescriptorSetLayout(logical_device, dl, nullptr);
 	}
 	// Pipeline layout
 	vkDestroyPipelineLayout(logical_device, pipeline_layout, nullptr);
+	vkDestroyPipelineLayout(logical_device, compute_pipeline_layout, nullptr);
 	// Uniform buffer
 	vkFreeMemory(logical_device, uniform_buffer_memory, nullptr);
 	vkDestroyBuffer(logical_device, uniform_buffer, nullptr);

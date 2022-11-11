@@ -27,6 +27,12 @@ layout (std430, binding = 1) writeonly buffer outputData
 We need to destroy each Descriptor Set Layout with [`vkDestroyDescriptorSetLayout`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap14.html#vkDestroyDescriptorSetLayout).
 
 ```C++
+    /**************************************************************/
+	/* Comp 4: Descriptor Sets (14.2.)                            */
+	/**************************************************************/
+	/**************************************************************/
+	/* Comp 4.1: Descriptor Set Layout (14.2.1)                   */
+	/**************************************************************/
     // Input
 	VkDescriptorSetLayoutBinding input_descriptor_set_binding{};
 	input_descriptor_set_binding.binding = 0;
