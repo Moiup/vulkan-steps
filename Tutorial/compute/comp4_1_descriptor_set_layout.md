@@ -81,4 +81,4 @@ File: [comp4_1_descriptor_set_layout.cpp](../../Code/comp_4_1_descriptor_set_lay
 
 | Previous | Next |
 |---|---|
-| [Step 8: Descriptor Sets (14.2.)](descriptor_sets.md) | [Step 8.2: Pipeline Layouts (14.2.2.)](pipeline_layouts.md) |
+| [Comp 4: Descriptor Sets (14.2.)](comp4_descriptor_sets.md) | [Comp 4.2: Pipeline Layouts (14.2.2.)](comp4_2_pipeline_layouts.md) |
