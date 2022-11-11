@@ -35,4 +35,4 @@ File: [comp4_2_pipeline_layouts.cpp](../../Code/comp_4_2_pipeline_layouts.cpp)
 
 | Previous | Next |
 |---|---|
-| [Comp 4.1: Descriptor Sets (14.2.)](comp4_1_descriptor_set_layout.md) | [Comp 4.3: Allocation of Descriptor Sets (14.2.4.)](comp4_3_allocation_of_descriptor_sets.md) |
+| [Comp 4.1: Descriptor Set Layout (14.2.1)](comp4_1_descriptor_set_layout.md) | [Comp 4.3: Allocation of Descriptor Sets (14.2.3.)](comp4_3_allocation_of_descriptor_sets.md) |

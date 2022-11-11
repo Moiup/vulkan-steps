@@ -1,4 +1,4 @@
-# **Step 8.4: Descriptor Set Updates (14.2.3.)**
+# **Step 8.4: Descriptor Set Updates (14.2.4.)**
 ## **Hints**
 This is when we finaly affect the Uniform Buffer to the Descriptor Set. To do so, we must call the function [`vkUpdateDescriptorSets`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap14.html#vkUpdateDescriptorSets).
 

@@ -1,4 +1,4 @@
-# **Comp 4.3:  Layouts (14.2.2.)**
+# **Comp 4.3: Allocation of Descriptor Sets (14.2.3.)**
 ## **Hints**
 To allocate memory for Descriptor : [`vkAllocateDescriptorSets`](https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap14.html#vkAllocateDescriptorSets). 
 
@@ -62,4 +62,4 @@ File: [comp4_3_allocation_of_descriptor_sets.cpp](../../Code/comp_4_3_allocation
 
 | Previous | Next |
 |---|---|
-| [Comp 4.2: Pipeline Layouts (14.2.3.)](comp4_2_pipeline_layouts.md) | [Comp 4.4: Descriptor Set Updates (14.2.4.)](comp4_4_descriptor_set_updates.md) |
+| [Comp 4.2: Pipeline Layouts (14.2.2.)](comp4_2_pipeline_layouts.md) | [Comp 4.4: Descriptor Set Updates (14.2.4.)](comp4_4_descriptor_set_updates.md) |
