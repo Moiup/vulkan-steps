@@ -9,4 +9,4 @@ Descriptor sets are elements that describe the Uniform Buffer memory mapping to 
 
 | Previous | Next |
 |---|---|
-| [Step 7: Uniform Buffer (12.1. and 12.7.)](uniform_buffer.md) | [Step 8.1: Descriptor Set Layout (14.2.1.)](descriptor_set_layout.md) |
+| [Comp 3: Storage Buffer (12.1. and 12.7.)](comp4_descriptor_sets.md) | [Comp 4.1: Descriptor Set Layout (14.2.1.)](comp4_1_descriptor_set_layout.md) |
