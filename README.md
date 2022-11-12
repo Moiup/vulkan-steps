@@ -81,7 +81,7 @@ The code that I provide is not the cleanest, and this is done on purpose. Why? B
    - [Comp 4.3: Allocation of Descriptor Sets (14.2.3.)](Tutorial/compute/comp4_3_allocation_of_descriptor_sets.md)
    - [Comp 4.4: Descriptor Set Updates (14.2.4)](Tutorial/compute/comp4_4_descriptor_set_updates.md)
  - [Comp 5: Compute Pipeline (10.1.)](Tutorial/compute/comp5_compute_pipeline.md)
- - [Comp 6: Fences and Semaphores](Tutorial/compute/comp6_fences_and_semaphores.md)
+ - [Comp 6: Fences and Semaphores (7.3. and 7.4.)](Tutorial/compute/comp6_fences_and_semaphores.md)
    - [Comp 6.1: Fences](Tutorial/compute/comp6_1_fences.md)
    - [Comp 6.2: Semaphores](Tutorial/compute/comp6_2_semaphores.md)
  - [Comp 7: Dispatch](Tutorial/compute/comp7_dispatch.md)
