@@ -73,7 +73,7 @@ The code that I provide is not the cleanest, and this is done on purpose. Why? B
  - [Comp 1: Compute Queue (5.3.)](Tutorial/compute/comp1_compute_queue.md)
  - [Comp 2: Compute Shader](Tutorial/compute/comp2_compute_shader.md)
    - [Comp 2.1: Compiling](Tutorial/compute/comp2_1_compiling.md)
-   - [Comp 2.2: Shader Module (9.1)](Tutorial/compute/comp2_2_shader_module.md)
+   - [Comp 2.2: Shader Module (9.1.)](Tutorial/compute/comp2_2_shader_module.md)
  - [Comp 3: Storage Buffers (12.1. and 12.7.)](Tutorial/compute/comp3_storage_buffer.md)
  - [Comp 4: Descriptor Sets (14.2.)](Tutorial/compute/comp4_descriptor_sets.md)
    - [Comp 4.1: Descriptor Set Layout (14.2.1.)](Tutorial/compute/comp4_1_descriptor_set_layout.md)
