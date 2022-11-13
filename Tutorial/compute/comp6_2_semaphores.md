@@ -96,6 +96,8 @@ We will need to create multiple semaphores.
 	}
 ```
 
+File: [comp6_semaphores.cpp](../../Code/comp6_semaphores.cpp)
+
 | Previous | Next |
 |---|---|
 | [Comp 6.1: Fences (7.3.)](comp6_1_fences.md) | [Comp 7: Dispatch](comp7_dispatch.md) |

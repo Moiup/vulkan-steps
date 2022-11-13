@@ -84,5 +84,5 @@ The code that I provide is not the cleanest, and this is done on purpose. Why? B
  - [Comp 6: Fences and Semaphores (7.3. and 7.4.)](Tutorial/compute/comp6_fences_and_semaphores.md)
    - [Comp 6.1: Fences (7.3.)](Tutorial/compute/comp6_1_fences.md)
    - [Comp 6.2: Semaphores (7.4.)](Tutorial/compute/comp6_2_semaphores.md)
- - [Comp 7: Dispatch](Tutorial/compute/comp7_dispatch.md)
- - [Comp 8: Drawing](Tutorial/compute/comp8_drawing.md)
+ - [Comp 7: Dispatch (28.)](Tutorial/compute/comp7_dispatch.md)
+ - [Comp 8: Drawing (21.3. and 33.10.)](Tutorial/compute/comp8_drawing.md)
