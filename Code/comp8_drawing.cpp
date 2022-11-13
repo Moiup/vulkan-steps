@@ -2365,9 +2365,6 @@ int main()
 	for (auto fb : framebuffer_arr) {
 		vkDestroyFramebuffer(logical_device, fb, nullptr);
 	}
-	for (auto dl : compute_descriptor_set_layout_arr) {
-		vkDestroyDescriptorSetLayout(logical_device, dl, nullptr);
-	}
 	// Shader Module
 	vkDestroyShaderModule(logical_device, fragment_shader_module, nullptr);
 	vkDestroyShaderModule(logical_device, vertex_shader_module, nullptr);
@@ -2428,6 +2425,7 @@ int main()
 	);
 	// Command Pool
 	vkDestroyCommandPool(logical_device, command_pool, nullptr);
+
 	// Logical device
 	vkDestroyDevice(logical_device, nullptr);
 	// Surface
