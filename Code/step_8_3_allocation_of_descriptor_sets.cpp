@@ -728,16 +728,16 @@ int main()
 
 	// Allocating descriptor sets
 	std::vector<VkDescriptorSet> descriptor_sets_arr(descriptor_pool_size_arr.size());
-	std::vector<VkDescriptorSetAllocateInfo> descriptor_sets_info_arr(descriptor_pool_size_arr.size());
-	descriptor_sets_info_arr[0].sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO;
-	descriptor_sets_info_arr[0].pNext = nullptr;
-	descriptor_sets_info_arr[0].descriptorPool = descriptor_pool;
-	descriptor_sets_info_arr[0].descriptorSetCount = descriptor_pool_size_arr.size();
-	descriptor_sets_info_arr[0].pSetLayouts = descriptor_set_layout_arr.data();
+	VkDescriptorSetAllocateInfo descriptor_sets_info{};
+	descriptor_sets_info.sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO;
+	descriptor_sets_info.pNext = nullptr;
+	descriptor_sets_info.descriptorPool = descriptor_pool;
+	descriptor_sets_info.descriptorSetCount = descriptor_pool_size_arr.size();
+	descriptor_sets_info.pSetLayouts = descriptor_set_layout_arr.data();
 
 	vk_result = vkAllocateDescriptorSets(
 		logical_device,
-		descriptor_sets_info_arr.data(),
+		&descriptor_sets_info,
 		descriptor_sets_arr.data()
 	);
 	if (vk_result != VK_SUCCESS) {
@@ -755,14 +755,12 @@ int main()
 	/* Destroying */
 	/**************/
 	// Descriptor sets
-	for (int i = 0; i < descriptor_sets_arr.size(); i++) {
-		vk_result = vkFreeDescriptorSets(
-			logical_device,
-			descriptor_pool,
-			descriptor_sets_info_arr[i].descriptorSetCount,
-			&descriptor_sets_arr[i]
-		);
-	}
+	vk_result = vkFreeDescriptorSets(
+		logical_device,
+		descriptor_pool,
+		descriptor_sets_info.descriptorSetCount,
+		descriptor_sets_arr.data()
+	);
 	// Descriptor pool
 	vkDestroyDescriptorPool(logical_device, descriptor_pool, nullptr);
 	// Descriptor set Layout
