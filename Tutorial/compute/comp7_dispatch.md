@@ -123,4 +123,4 @@ File: [comp7_dispatch.cpp](../../Code/comp7_dispatch.cpp)
 
 | Previous | Next |
 |---|---|
-| [Comp 6.2: Semaphores (7.4.)](comp7_semaphores.md) | [Comp 8: Drawing (21.3. and 33.10.)](comp7_dispatch.md) |
+| [Comp 6.2: Semaphores (7.4.)](comp7_semaphores.md) | [Comp 8: Drawing (21.3. and 33.10.)](comp8_drawing.md) |
