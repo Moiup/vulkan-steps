@@ -732,7 +732,7 @@ int main()
 	descriptor_sets_info.sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO;
 	descriptor_sets_info.pNext = nullptr;
 	descriptor_sets_info.descriptorPool = descriptor_pool;
-	descriptor_sets_info.descriptorSetCount = descriptor_pool_size_arr.size();
+	descriptor_sets_info.descriptorSetCount = descriptor_set_layout_arr.size();
 	descriptor_sets_info.pSetLayouts = descriptor_set_layout_arr.data();
 
 	vk_result = vkAllocateDescriptorSets(
