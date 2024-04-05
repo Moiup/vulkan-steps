@@ -4,4 +4,4 @@ The purpose here is to make a simple compute shader. It will take an array as in
 
 | Previous | Next |
 |---|---|
-| [Introduction](../../README.md) | [Comp 1: Compute Queue](comp1_compute_queue) |
+| [Introduction](../../README.md) | [Comp 1: Compute Queue](comp1_compute_queue.md) |
