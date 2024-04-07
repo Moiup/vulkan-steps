@@ -33,6 +33,8 @@ The code that I provide is not the cleanest, and this is done on purpose. Why? B
 
 ## **Table of contents**
 
+After the table of contents, you will find a list of additional examples.
+
 ### Graphic Pipeline
 
  - [Environment configuration](Tutorial/environment_configuration.md)
@@ -86,3 +88,6 @@ The code that I provide is not the cleanest, and this is done on purpose. Why? B
    - [Comp 6.2: Semaphores (7.4.)](Tutorial/compute/comp6_2_semaphores.md)
  - [Comp 7: Dispatch (28.)](Tutorial/compute/comp7_dispatch.md)
  - [Comp 8: Drawing (21.3. and 33.10.)](Tutorial/compute/comp8_drawing.md)
+
+## **More examples**
+ - [Compute Only](Examples/compute_only.md)
