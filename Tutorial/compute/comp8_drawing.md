@@ -186,5 +186,5 @@ For drawing, the steps are the same as the one in [Step 15: Drawing (21.3. and 3
 File: [comp7_dispatch.cpp](../../Code/comp8_drawing.cpp)
 
 | Previous |
-|---|---|
+|---|
 | [Comp 7: Dispatch (28.)](comp7_dispatch.md) |
