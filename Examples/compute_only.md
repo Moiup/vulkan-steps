@@ -365,7 +365,7 @@ int main() {
 		bool is_found{ false };
 		VkMemoryPropertyFlags desired_type = (VK_MEMORY_PROPERTY_HOST_VISIBLE_BIT | VK_MEMORY_PROPERTY_HOST_COHERENT_BIT);
 		for (uint32_t i = 0; i < (memory_properties.memoryTypeCount) && !is_found; ++i) {
-			is_found = (memory_requirements.memoryTypeBits & desired_type) & (memory_properties.memoryTypes[i].propertyFlags);
+			is_found = ((memory_requirements.memoryTypeBits & (1 << i)) && ((memory_properties.memoryTypes[i].propertyFlags & desired_type)) == desired_type);
 			memory_allocate_info.memoryTypeIndex = i;
 		}
 		if (!is_found) {
@@ -442,7 +442,7 @@ int main() {
 		bool is_found{ false };
 		VkMemoryPropertyFlags desired_type = (VK_MEMORY_PROPERTY_HOST_VISIBLE_BIT | VK_MEMORY_PROPERTY_HOST_COHERENT_BIT);
 		for (uint32_t i = 0; i < (memory_properties.memoryTypeCount) && !is_found; ++i) {
-			is_found = (memory_requirements.memoryTypeBits & desired_type) & (memory_properties.memoryTypes[i].propertyFlags);
+			is_found = ((memory_requirements.memoryTypeBits & (1 << i)) && ((memory_properties.memoryTypes[i].propertyFlags & desired_type)) == desired_type);
 			memory_allocate_info.memoryTypeIndex = i;
 		}
 		if (!is_found) {
