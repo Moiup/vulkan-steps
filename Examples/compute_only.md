@@ -555,13 +555,12 @@ int main() {
 	/* Update Descriptor Sets                                     */
 	/**************************************************************/
 	std::vector<VkWriteDescriptorSet> write_descriptor_sets{};
+	VkDescriptorBufferInfo input_descriptor_buffer_info{};
+	input_descriptor_buffer_info.buffer = input_buffer;
+	input_descriptor_buffer_info.offset = 0;
+	input_descriptor_buffer_info.range = VK_WHOLE_SIZE;
 	{
 		VkDescriptorSetLayoutBinding& dslb = descriptor_set_layout_bindings[0];
-
-		VkDescriptorBufferInfo descriptor_buffer_info{};
-		descriptor_buffer_info.buffer = input_buffer;
-		descriptor_buffer_info.offset = 0;
-		descriptor_buffer_info.range = VK_WHOLE_SIZE;
 
 		VkWriteDescriptorSet write_descriptor_set{};
 		write_descriptor_set.sType = VK_STRUCTURE_TYPE_WRITE_DESCRIPTOR_SET;
@@ -572,18 +571,18 @@ int main() {
 		write_descriptor_set.descriptorCount = dslb.descriptorCount;
 		write_descriptor_set.descriptorType = dslb.descriptorType;
 		write_descriptor_set.pImageInfo = nullptr;
-		write_descriptor_set.pBufferInfo = &descriptor_buffer_info;
+		write_descriptor_set.pBufferInfo = &input_descriptor_buffer_info;
 		write_descriptor_set.pTexelBufferView = nullptr;
 
 		write_descriptor_sets.push_back(write_descriptor_set);
 	};
+
+	VkDescriptorBufferInfo output_descriptor_buffer_info{};
+	output_descriptor_buffer_info.buffer = output_buffer;
+	output_descriptor_buffer_info.offset = 0;
+	output_descriptor_buffer_info.range = VK_WHOLE_SIZE;
 	{
 		VkDescriptorSetLayoutBinding& dslb = descriptor_set_layout_bindings[1];
-
-		VkDescriptorBufferInfo descriptor_buffer_info{};
-		descriptor_buffer_info.buffer = output_buffer;
-		descriptor_buffer_info.offset = 0;
-		descriptor_buffer_info.range = VK_WHOLE_SIZE;
 
 		VkWriteDescriptorSet write_descriptor_set{};
 		write_descriptor_set.sType = VK_STRUCTURE_TYPE_WRITE_DESCRIPTOR_SET;
@@ -594,7 +593,7 @@ int main() {
 		write_descriptor_set.descriptorCount = dslb.descriptorCount;
 		write_descriptor_set.descriptorType = dslb.descriptorType;
 		write_descriptor_set.pImageInfo = nullptr;
-		write_descriptor_set.pBufferInfo = &descriptor_buffer_info;
+		write_descriptor_set.pBufferInfo = &output_descriptor_buffer_info;
 		write_descriptor_set.pTexelBufferView = nullptr;
 
 		write_descriptor_sets.push_back(write_descriptor_set);
